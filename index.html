@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌍 Country Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌍 Country Explorer</h1>
+        <p class="subtitle">Найди любую страну и узнай о ней больше</p>
+      </header>
+
+      <div class="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Введите название страны..."
+          autocomplete="off"
+        />
+        <button id="searchBtn" class="search-btn">Поиск</button>
+      </div>
+
+      <div id="errorMessage" class="error-message hidden"></div>
+
+      <div id="countryContainer" class="country-container"></div>
+
+      <div id="neighborsContainer" class="neighbors-container hidden">
+        <h2>Соседние страны</h2>
+        <div id="neighborsList" class="neighbors-list"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
